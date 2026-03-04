@@ -55,7 +55,7 @@ Running each script produces:
 
 ```bash
 # Score and rank all practices
-python rula_partnership_scorer.py
+python partnership_scorer.py
 
 # Generate CRM records and owner workload summary
 python crm_output.py
