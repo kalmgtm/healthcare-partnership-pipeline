@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-rula_partnership_scorer.py
+partnership_scorer.py
 
 Scores healthcare practices as potential Rula mental health referral partners.
 
