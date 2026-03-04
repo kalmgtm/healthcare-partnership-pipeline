@@ -1,6 +1,6 @@
-# Rula Partnership Pipeline
+# Healthcare Partnership Pipeline
 
-A Python toolkit for scoring, prioritizing, and managing outreach to healthcare practices as potential Rula mental health referral partners.
+A Python toolkit for scoring, prioritizing, and managing outreach to healthcare practices as potential mental health referral partners.
 
 ## Overview
 
@@ -10,7 +10,7 @@ This pipeline takes a set of healthcare practices, scores them across four dimen
 
 | File | Description |
 |------|-------------|
-| `rula_partnership_scorer.py` | Core scoring engine. Scores each practice out of 100 across four dimensions and produces a ranked report, tier summary, bar chart, and CSV export. |
+| `partnership_scorer.py` | Core scoring engine. Scores each practice out of 100 across four dimensions and produces a ranked report, tier summary, bar chart, and CSV export. |
 | `crm_output.py` | Generates simulated Salesforce CRM records for each practice. Includes tier, owner assignment, SLA status, and recommended action. Prints a formatted table and exports to CSV. |
 | `sla_tracker.py` | Tracks days since last outreach per practice and flags SLA breaches by tier. Prints a urgency-sorted report with an owner action callout. Exports to CSV. |
 | `outreach_generator.py` | Generates a personalized one-line outreach hook for each Tier 1 practice based on BH gap, provider count, and notes. Uses signal detection to tailor each hook. |
@@ -46,10 +46,10 @@ Practices are scored out of **100 points** across four dimensions:
 
 Running each script produces:
 
-- **`rula_partner_scores.png`** - Horizontal bar chart of all practice scores, colored by tier
-- **`rula_partner_scores.csv`** - Full scored and ranked practice list
-- **`rula_crm_records.csv`** - Simulated Salesforce records with owner and SLA fields
-- **`rula_sla_tracker.csv`** - SLA status report sorted by urgency
+- **`partner_scores.png`** - Horizontal bar chart of all practice scores, colored by tier
+- **`partner_scores.csv`** - Full scored and ranked practice list
+- **`crm_records.csv`** - Simulated Salesforce records with owner and SLA fields
+- **`sla_tracker.csv`** - SLA status report sorted by urgency
 
 ## Usage
 
